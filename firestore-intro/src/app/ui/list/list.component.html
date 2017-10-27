@@ -1,0 +1,13 @@
+<!--This come from the whole collection  -->
+<div *ngFor="let note of notes |async">
+  <h3>{{note | json}}</h3>
+  <h2>{{note.content}}</h2>
+</div>
+
+<!--This come from a single document  -->
+<div *ngIf="note | async as t">
+  <h4>Content: {{ t.content }} Hearts :{{t.hearths}}</h4>
+</div>
+
+<input [(ngModel)]="newContent">
+<button (click)="updateContent()">Update</button>

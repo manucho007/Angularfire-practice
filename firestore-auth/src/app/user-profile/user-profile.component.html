@@ -1,0 +1,25 @@
+<div *ngIf="auth.user else guest">
+  <!--Template will recplace this div  -->
+  <h3>Hello {{user.displayName}}</h3>
+  <img [src]="user.photoURL">
+  <p>UID: {{user.uid}}</p>
+</div>
+
+
+<!-- User NOT logged in -->
+<ng-template #guest>
+  <h3>Hello Guest</h3>
+  <p>Login to get started..</p>
+  <button (click)="auth.googleLogin()">
+    Connect Google
+  </button>
+</ng-template>
+
+<!--User logged in  -->
+<!-- <ng-template #authenticated>
+  <div *ngIf="auth.user | async as user">
+    <h3>Hello {{user.displayName}}</h3>
+    <img [src]="user.photoURL">
+    <p>UID: {{user.uid}}</p>
+  </div>
+</ng-template> -->
