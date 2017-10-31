@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('firestore-auth App', () => {
+describe('auth-firestore App', () => {
   let page: AppPage;
 
   beforeEach(() => {

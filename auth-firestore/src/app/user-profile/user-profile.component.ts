@@ -7,7 +7,7 @@ import {AuthService} from '../core/auth.service';
 })
 export class UserProfileComponent implements OnInit {
 //We call the service
-  constructor(public auth:AuthService) { }
+  constructor(public auth: AuthService) { }
 
   ngOnInit() {
   }

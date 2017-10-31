@@ -1,16 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { AngularFireModule } from 'angularfire2';
-import { environment } from '../environments/environment';
+
 import { AppComponent } from './app.component';
 import { CoreModule} from './core/core.module';
-import { UserProfileComponent } from './user-profile/user-profile.component';
-import { RouterModule,Routes} from '@angular/router';
+import { environment } from '../environments/environment';
+import { AngularFireModule } from 'angularfire2';
 
-const appRoutes:Routes=[
-  {path: '', component:UserProfileComponent},
-  {path: 'user-profile', component:UserProfileComponent}
+import { RouterModule, Routes } from '@angular/router';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+
+const app_routes: Routes = [
+  { path: 'user', component: UserProfileComponent }
 ];
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +23,8 @@ const appRoutes:Routes=[
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
-    CoreModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(app_routes),
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
