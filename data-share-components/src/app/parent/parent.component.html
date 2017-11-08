@@ -1,0 +1,13 @@
+
+<div class="parent">
+  <h1>Parent</h1>
+  <!--Method 1  -->
+  <!--We pass the data to the child with []   -->
+  <!-- <app-child [message]="message">
+  </app-child> -->
+  <!--Method2  -->
+  <!--We receive the data from an event  -->
+  Message: {{message}}
+  <app-child (messageEvent)="receiveMessage($event)">
+  </app-child>
+</div>
