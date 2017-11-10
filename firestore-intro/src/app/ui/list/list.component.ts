@@ -46,7 +46,7 @@ export class ListComponent implements OnInit {
 // This one gets the whole collection
    this.notesCollection = this.afs.collection('notes')
     // Get Observable data back
-    // Kind of equivalent to firebase list observable sen raw data
+    // Kind of equivalent to firebase list observable send raw data
    this.notes = this.notesCollection.valueChanges();
     //     // We'll get ll the metadata
     //     this.snapshot = this.notesCollection.snapshotChanges()
