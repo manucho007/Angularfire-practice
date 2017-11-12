@@ -6,4 +6,5 @@
   <li>Share data through components</li>
   <li>Star Review System with Firestore</li>
   <li>RxJS Quick Start with Practical Examples</li>
+  <li>Infinite Scroll With Firestore Angular 5</li>
 </ul>
