@@ -1,4 +1,4 @@
-#List of projects with angularfire5
+# List of projects with angularfire5
 <ul>
   <li>Intro to Firestore</li>
   <li>authentication with Firestore</li>
@@ -9,3 +9,4 @@
   <li>Infinite Scroll With Firestore Angular 5</li>
   <li>Advanced Firestore usage</li>
 </ul>
+## Intro to Firestore
