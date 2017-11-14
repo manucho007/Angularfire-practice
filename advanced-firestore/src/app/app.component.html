@@ -1,0 +1,15 @@
+<ul *ngFor="let item of items |async">
+<li>{{item.title}} --- {{item.id}}</li>
+<li>{{item.description}} --- {{item.location}}</li>
+</ul>
+<button type="button" (click)="updateItem()">Update</button>
+<button type="button" (click)="setItem()">Set</button>
+<button type="button" (click)="addItem()">Add</button>
+
+<!--This come from a single doc and the pipe  -->
+<div *ngIf="itemDoc |async as t">
+  <h1 >{{t.title}}</h1>
+  <h2>{{t.description}}</h2>
+  <h3>{{(t.user | doc | async)?.displayName}}</h3>
+  <h3>{{(t.user | doc | async)?.email}}</h3>
+</div>
