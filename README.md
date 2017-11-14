@@ -1,12 +1,12 @@
-# List of projects with angularfire5
+# List of projects with Angular 4,5 and Firestore
 <ul>
   <li>Intro to Firestore</li>
-  <li>authentication with Firestore</li>
+  <li>Authentication with Firestore and Multistep</li>
   <li>Lazy loading Angular 4</li>
   <li>Share data through components</li>
   <li>Star Review System with Firestore</li>
   <li>RxJS Quick Start with Practical Examples</li>
   <li>Infinite Scroll With Firestore Angular 5</li>
   <li>Advanced Firestore usage</li>
+  <li>Multi-Step Password Auth with Firebase and Reactive Forms</li>
 </ul>
-## Intro to Firestore
