@@ -16,28 +16,35 @@ export class UserFormComponent implements OnInit {
   constructor(public fb:FormBuilder, public auth:AuthService, private router:Router) { }
 
   ngOnInit() {
-    // First step
-    this.signupForm =this.fb.group({
-    'email':['',[
-      Validators.required,
-      Validators.email
-    ]
-  ],
-  'password':['',[
-    Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
-    Validators.minLength(6),
-    Validators.maxLength(25)
-    ]
-  ]
-});
-
-// Second step
-this.detailForm = this.fb.group({
-'catchPhrase': ['',[Validators.required]]
-})
-
-
+    this.buildForm();
+    this.buildDetailForm();
 }
+
+// Creates the first Form
+buildForm():void{
+  // First step
+  this.signupForm =this.fb.group({
+  'email':['',[
+    Validators.required,
+    Validators.email
+  ]
+],
+'password':['',[
+  Validators.pattern('^(?=.*[0-9])(?=.*[a-zA-Z])([a-zA-Z0-9]+)$'),
+  Validators.minLength(6),
+  Validators.maxLength(25)
+  ]
+]
+});
+}
+// Creates the second form
+buildDetailForm():void{
+  // Second step
+  this.detailForm = this.fb.group({
+  'catchPhrase': ['',[Validators.required]]
+  })
+}
+
 // Using getters will make your code look pretty
 get email(){return this.signupForm.get('email')};
 get password(){return this.signupForm.get('password')};
