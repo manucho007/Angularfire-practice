@@ -8,4 +8,5 @@
   <li>RxJS Quick Start with Practical Examples</li>
   <li>Infinite Scroll With Firestore Angular 5</li>
   <li>Advanced Firestore usage</li>
+  <li>Angular ngrx Redux Quick Start</li>
 </ul>
