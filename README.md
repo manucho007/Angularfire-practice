@@ -9,4 +9,5 @@
   <li>Infinite Scroll With Firestore Angular 5</li>
   <li>Advanced Firestore usage</li>
   <li>Angular ngrx Redux Quick Start</li>
+  <li>@ngrx/entity and Feature Modules - pizza App</li>
 </ul>
