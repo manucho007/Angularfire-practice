@@ -10,4 +10,5 @@
   <li>Advanced Firestore usage</li>
   <li>Angular ngrx Redux Quick Start</li>
   <li>@ngrx/entity and Feature Modules - pizza App</li>
+  <li>Contentful - CMS for Angular Progressive Web Apps</li>
 </ul>
