@@ -1,7 +1,7 @@
 <!--This come from the whole collection  -->
 <div *ngFor="let note of notes |async">
   <h3>{{note | json}}</h3>
-  <h2>{{note.content}}</h2>
+  <h2>{{note.content}} {{note.hearths}}</h2>
 </div>
 
 <!--This come from a single document  -->
