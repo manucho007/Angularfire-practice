@@ -1,0 +1,16 @@
+
+
+<h1>Threaded Comments</h1>
+
+
+    <app-comment *ngFor="let comment of comments | async"
+                 [commentId]="comment.id">
+    </app-comment>
+
+
+<hr>
+<button class="button is-success" (click)="db.seedComments()">Seed Me</button>
+<button class="button is-success" (click)="db.commentAggregation()">Run Aggregation</button>
+
+
+<button class="button is-success" (click)="db.set('test', { content: 'hello world' })">Set with Aggregation</button>

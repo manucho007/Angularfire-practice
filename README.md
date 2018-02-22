@@ -12,4 +12,5 @@
   <li>@ngrx/entity and Feature Modules - pizza App</li>
   <li>Contentful - CMS for Angular Progressive Web Apps</li>
   <li>File Upload Dropzone using angularfire2</li>
+  <li>Firestore threaded comments</li>
 </ul>
