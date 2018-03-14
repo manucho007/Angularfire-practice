@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
 
     // New way
     // this.items = this.db.col$('items'); //collection
-    this.itemDoc =this.db.doc$('items/y69XCoi5jD4ab9kfeurY'); //Single doc
+    this.itemDoc =this.db.doc$('items/item 6'); //Single doc
     // *** Usage
     // this.items =this.db.col$('items', ref => ref.where('title', '==', 'Item 3'))
 
