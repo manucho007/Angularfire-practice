@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {AngularFireStorage,AngularFireUploadTask } from 'angularfire2/storage';
-import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFirestore, AngularFirestoreCollection  } from 'angularfire2/firestore';
 import { Observable } from 'rxjs/Observable';
 import { tap } from 'rxjs/operators';
+import {Photo} from '../interface';
 
 @Component({
   selector: 'file-upload',
@@ -24,9 +25,17 @@ export class FileUploadComponent {
   // State fro dropzone Css toggling
   isHovering: boolean;
 
-  constructor(private storage: AngularFireStorage, private db: AngularFirestore) { }
 
+  private itemsCollection:AngularFirestoreCollection<Photo>;
+  photos:Observable<Photo[]>;
+  constructor(private storage: AngularFireStorage, private db: AngularFirestore) {
+    this.itemsCollection = db.collection<Photo>('photos');
+    const ref = this.storage.ref(`photos.photo`);
+    this.photos = this.itemsCollection.valueChanges();
+  }
+ngOnInit(){
 
+}
   toggleHover(event: boolean) {
     this.isHovering = event;
   }

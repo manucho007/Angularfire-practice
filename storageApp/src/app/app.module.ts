@@ -11,12 +11,14 @@ import { AngularFirestoreModule } from 'angularfire2/firestore';
 import { AngularFireStorageModule } from 'angularfire2/storage';
 import { FileSizePipe } from './file-size.pipe';
 import { DropZoneDirective } from './drop-zone.directive';
+import { DownloadUrlPipe } from './download-url.pipe';
 @NgModule({
   declarations: [
     AppComponent,
     FileUploadComponent,
     FileSizePipe,
-    DropZoneDirective
+    DropZoneDirective,
+    DownloadUrlPipe
   ],
   imports: [
     BrowserModule,

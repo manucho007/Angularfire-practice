@@ -61,3 +61,8 @@
 
 
 </div>
+<ul *ngFor="let photo of photos |async">
+  <li>{{photo.path}}</li>
+  <li>{{photo.size}}</li>
+  <img *ngIf="photo.path | downloadUrl | async as photoUrl" [src]="photoUrl">>
+</ul>
