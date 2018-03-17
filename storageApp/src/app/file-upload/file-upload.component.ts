@@ -30,7 +30,6 @@ export class FileUploadComponent {
   photos:Observable<Photo[]>;
   constructor(private storage: AngularFireStorage, private db: AngularFirestore) {
     this.itemsCollection = db.collection<Photo>('photos');
-    const ref = this.storage.ref(`photos.photo`);
     this.photos = this.itemsCollection.valueChanges();
   }
 ngOnInit(){
@@ -60,8 +59,10 @@ ngOnInit(){
     // The main task
     this.task = this.storage.upload(path, file, { customMetadata })
 
+    console.log(path)
     // Progress monitoring
     this.percentage = this.task.percentageChanges();
+
     this.snapshot   = this.task.snapshotChanges().pipe(
       tap(snap => {
         console.log(snap)
