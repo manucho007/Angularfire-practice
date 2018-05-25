@@ -14,4 +14,5 @@
   <li>File Upload Dropzone using angularfire2</li>
   <li>Firestore threaded comments</li>
   <li>Role-Based Authorization</li>
+  <li>Angula Electron</li>
 </ul>
