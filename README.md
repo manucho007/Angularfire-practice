@@ -16,7 +16,12 @@
   <li>Role-Based Authorization</li>
   <li>Angular Electron App</li>
 <<<<<<< HEAD
+<<<<<<< HEAD
   <li>Redux from Scratch using RXJS</li>
+=======
+  <li>Ngrx Redux Quickstart</li>
+  <li>NGXS Angular State Manager</li>
+>>>>>>> 248e78bb58ecb1f405db5f73abc97d6043af29f2
 =======
   <li>Ngrx Redux Quickstart</li>
   <li>NGXS Angular State Manager</li>
