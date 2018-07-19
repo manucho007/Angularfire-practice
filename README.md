@@ -1,4 +1,4 @@
-# List of projects with Angular 4,5 and Firestore
+# List of projects with Angular 4, 5, 6 and Firestore
 <ul>
   <li>Intro to Firestore</li>
   <li>Authentication with Firestore and Multistep Password Auth with Firebase and Reactive Forms with Push notifications</li>
@@ -14,5 +14,6 @@
   <li>File Upload Dropzone using angularfire2</li>
   <li>Firestore threaded comments</li>
   <li>Role-Based Authorization</li>
-  <li>Angula Electron</li>
+  <li>Angular Electron App</li>
+  <li>Redux from Scratch using RXJS</li>
 </ul>
