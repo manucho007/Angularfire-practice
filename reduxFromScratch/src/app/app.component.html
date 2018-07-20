@@ -6,11 +6,12 @@
     <h3>Selected State</h3>
 
     {{ spanish | async | json }}
+    {{ french | async | json }}
 
     <hr>
     <button class="is-primary button" (click)="set()">Set</button>
     <button class="is-success button" (click)="update()">Update</button>
-    <button class="is-danger button" (click)="delete()">Remove</button>
+    <button class="is-danger button" (click)="delete()">Remove Spanish</button>
 
 
 </main>
