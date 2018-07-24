@@ -16,4 +16,5 @@
   <li>Role-Based Authorization</li>
   <li>Angular Electron App</li>
   <li>Redux from Scratch using RXJS</li>
+  <li>Angular Elements Quick Start</li>
 </ul>
