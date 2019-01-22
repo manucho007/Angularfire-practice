@@ -1,3 +1,7 @@
+# 2019 Updated and new projects
+<ul>
+<li>Firebase Authentication w/ Angular 7</li>
+</ul>
 # List of projects with Angular 4, 5, 6 and Firestore
 <ul>
   <li>Intro to Firestore</li>
