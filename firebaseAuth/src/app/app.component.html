@@ -1,0 +1,20 @@
+<h1>Home</h1>
+
+<p>
+    <a routerLink="/dashboard">Dashboard</a>
+</p>
+
+<div *ngIf="auth.user$ |async as user else login">
+  <pre>
+      {{ user | json }}
+  </pre>
+
+  <hr>
+  <button class="button" (click)="auth.signOut()">Sign Out</button>
+</div>
+
+<ng-template #login>
+<button class="button" (click)="auth.googleSignin()">Login</button>
+</ng-template>
+
+<router-outlet></router-outlet>
