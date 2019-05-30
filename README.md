@@ -3,6 +3,7 @@
 <li>Firebase Authentication w/ Angular 7</li>
 </ul>
 # List of projects with Angular 4, 5, 6 and Firestore
+# Projects are included in the folder using the old version of angularfire2 
 <ul>
   <li>~~Intro to Firestore~~</li>
   <li>~~Authentication with Firestore and Multistep Password Auth with Firebase and Reactive Forms with Push notifications~~</li>
