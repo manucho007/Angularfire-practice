@@ -12,18 +12,36 @@ export class AuthGuard implements CanActivate {
     private  auth: AuthService,
     private router: Router
   ) {}
-  canActivate(
-    next: ActivatedRouteSnapshot,
-    state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
-      return this.auth.user$.pipe(
-        take(1),
-        map(user => !!user), // <-- map to boolean
-        tap(loggedIn => {
-          if (!loggedIn) {
-            console.log('access denied');
-            this.router.navigate(['/']);
-          }
-      })
- );
+// Traditional way using the user$ from authstate
+
+//   canActivate(
+//     next: ActivatedRouteSnapshot,
+//     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+//       return this.auth.user$.pipe(
+//         take(1),
+//         map(user => !!user), // <-- map to boolean
+//         tap(loggedIn => {
+//           if (!loggedIn) {
+//             console.log('access denied');
+//             this.router.navigate(['/']);
+//           }
+//       })
+//  );
+//   }
+
+// Using the getUser based promised for an async function
+async canActivate(
+      next: ActivatedRouteSnapshot,
+      state: RouterStateSnapshot): Promise<boolean>{
+
+  const user = await this.auth.getUser();
+  const loggedIn = !!user;
+
+  if (!loggedIn) {
+    console.log('access denied');
+    this.router.navigate(['/']);
   }
+
+  return loggedIn;
+}
 }
