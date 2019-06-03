@@ -1,6 +1,7 @@
 # 2019 Updated and new projects
 
 * Firebase Authentication w/ Angular 7
+* Angular Universal SSR with Firebase
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
