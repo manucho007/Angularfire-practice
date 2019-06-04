@@ -39,6 +39,7 @@
     <h5>email: {{user.email}}</h5>
     <img [src]="user.photoURL">
     <p>UID: {{ user.uid }}</p>
+    <user-presence [uid]="user.uid"></user-presence>
     <button class="button" (click)="auth.signOut()">
       <i class="fa fa-times" aria-hidden="true"></i>
       Logout

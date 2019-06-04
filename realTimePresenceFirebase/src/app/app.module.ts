@@ -7,15 +7,18 @@ import { environment } from '../environments/environment';
 
 // Firebase Imports
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { UserPresenceComponent } from './user-presence/user-presence.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    UserPresenceComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +26,8 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
-    AngularFireStorageModule
+    AngularFireStorageModule,
+    AngularFireDatabaseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
