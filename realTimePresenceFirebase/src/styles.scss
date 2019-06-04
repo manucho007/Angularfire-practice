@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome.scss";
+.content {
+    display: flex;
+    padding: 10vh 10vw;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  pre {
+    text-align: left;
+  }
