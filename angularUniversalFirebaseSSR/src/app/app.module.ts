@@ -9,11 +9,13 @@ import { environment } from '../environments/environment';
 
 // Firebase imports
 import { AngularFireModule } from "@angular/fire";
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
