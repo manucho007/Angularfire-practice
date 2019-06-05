@@ -4,6 +4,7 @@
 * Angular Universal SSR with Firebase
 * Realtime Presence with Firebase
 * Examples for decorators on typescript with Angular
+* Multi file upload to firebase storage with angular
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
