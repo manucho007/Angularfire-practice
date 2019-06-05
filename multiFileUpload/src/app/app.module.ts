@@ -9,10 +9,16 @@ import { environment } from '../environments/environment'
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireStorageModule } from "@angular/fire/storage";
+import { DropzoneDirective } from './services/dropzone.directive';
+import { UploadTaskComponent } from './upload-task/upload-task.component';
+import { UploaderComponent } from './uploader/uploader.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DropzoneDirective,
+    UploadTaskComponent,
+    UploaderComponent
   ],
   imports: [
     BrowserModule,
