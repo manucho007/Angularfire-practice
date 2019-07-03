@@ -3,16 +3,22 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { AlertButtonComponent } from './alert-button/alert-button.component';
 
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "../environments/environment";
+import { MessageService } from './message.service';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlertButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
