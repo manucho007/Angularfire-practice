@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "innorpg": {
+      "hosting": {
+        "PWA-tic-tac-toe": [
+          "innorpg"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "Tic Tac Toe": "innorpg"
+  }
+}

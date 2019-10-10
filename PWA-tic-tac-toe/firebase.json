@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "PWA-tic-tac-toe",
+      "public": "dist/PWA-tic-tac-toe",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
