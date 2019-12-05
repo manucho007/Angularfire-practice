@@ -6,6 +6,7 @@
 - Examples for decorators on typescript with Angular
 - Multi file upload to firebase storage with angular
 - PWA Tic Tac Toe [PWA](https://innorpg.firebaseapp.com/)
+- E2E testing with Cypress
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
