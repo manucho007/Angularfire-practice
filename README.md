@@ -1,4 +1,4 @@
-# 2019 Updated and new projects
+# 2020 Updated and new projects
 
 - Firebase Authentication with Angular 7
 - Angular Universal SSR with Firebase
@@ -7,6 +7,7 @@
 - Multi file upload to firebase storage with angular
 - PWA Tic Tac Toe [PWA](https://innorpg.firebaseapp.com/)
 - E2E testing with Cypress
+- Angular App with GraphQL and Apollo consuming the SpaceX API
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
