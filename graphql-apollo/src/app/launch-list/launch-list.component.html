@@ -1,0 +1,34 @@
+<ng-container *ngIf="pastLaunches$ | async as pastLaunches">
+  <main>
+    <section class="container">
+      <mat-card
+        *ngFor="let launch of pastLaunches"
+        [routerLink]="['/', launch.id]"
+      >
+        <mat-card-header>
+          <img
+            height="50"
+            width="50"
+            mat-card-avatar
+            loading="lazy"
+            [src]="launch.links.mission_patch_small"
+            alt="Mission patch of {{ launch.mission_name }}"
+          />
+          <mat-card-title>{{ launch.mission_name }}</mat-card-title>
+          <mat-card-subtitle
+            >{{ launch.rocket.rocket_name }} - launched
+            {{ launch.launch_date_utc | relativeTime }}
+          </mat-card-subtitle>
+        </mat-card-header>
+        <img
+          height="300"
+          width="300"
+          mat-card-image
+          loading="lazy"
+          [src]="launch.links.flickr_images[0]"
+          alt="Photo of {{ launch.mission_name }}"
+        />
+      </mat-card>
+    </section>
+  </main>
+</ng-container>
