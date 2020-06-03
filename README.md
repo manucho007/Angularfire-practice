@@ -8,6 +8,7 @@
 - PWA Tic Tac Toe [PWA](https://innorpg.firebaseapp.com/)
 - E2E testing with Cypress
 - Angular App with GraphQL and Apollo consuming the SpaceX API
+- Node.js Ultimate Beginner’s Guide in 7 Easy Steps
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
