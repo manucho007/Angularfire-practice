@@ -9,6 +9,7 @@
 - E2E testing with Cypress
 - Angular App with GraphQL and Apollo consuming the SpaceX API
 - Node.js Ultimate Beginner’s Guide in 7 Easy Steps
+- Kanban board with Angular 9
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
