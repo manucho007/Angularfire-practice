@@ -122,6 +122,10 @@
               "devServerTarget": "hold-to-delete-directive:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
