@@ -10,6 +10,7 @@
 - Angular App with GraphQL and Apollo consuming the SpaceX API
 - Node.js Ultimate Beginner’s Guide in 7 Easy Steps
 - Kanban board with Angular 9
+- Angular Directives - Build a Hold-to-Delete Button
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
