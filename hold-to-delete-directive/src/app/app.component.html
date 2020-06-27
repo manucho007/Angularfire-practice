@@ -4,4 +4,8 @@
   <button class="button" holdable (holdTime)="holdHandler($event)">
     Holdable
   </button>
+  <app-customer
+    *ngFor="let c of customers$ | async"
+    [customer]="c"
+  ></app-customer>
 </main>

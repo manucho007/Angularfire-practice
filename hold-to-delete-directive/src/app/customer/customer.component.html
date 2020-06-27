@@ -1,0 +1,16 @@
+<hr />
+
+<em>DocID: {{ customer.id }}</em>
+<h3>{{ customer.name }}</h3>
+<p>Email: {{ customer.email }}</p>
+<p>Order Total: {{ customer.orderTotal | currency }}</p>
+
+<button
+  class="button is-danger"
+  holdable
+  (holdTime)="deleteCustomer($event, customer)"
+>
+  Delete {{ customer.name }}
+</button>
+
+<progress class="progress is-danger" [value]="progress" max="100"></progress>
