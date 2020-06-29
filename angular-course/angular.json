@@ -121,6 +121,10 @@
               "devServerTarget": "angular-course:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
