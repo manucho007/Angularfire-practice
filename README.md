@@ -11,6 +11,7 @@
 - Node.js Ultimate Beginner’s Guide in 7 Easy Steps
 - Kanban board with Angular 9
 - Angular Directives - Build a Hold-to-Delete Button
+- Angular Course with Firestore
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
