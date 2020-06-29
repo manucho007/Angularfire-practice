@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "devf-3bee8": {
+      "hosting": {
+        "angular-course": [
+          "devf-3bee8"
+        ]
+      }
+    }
+  }
+}
