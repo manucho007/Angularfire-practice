@@ -12,6 +12,7 @@
 - Kanban board with Angular 9
 - Angular Directives - Build a Hold-to-Delete Button
 - Angular Course with Firestore
+- Superchat with React and Firebase
 
 ## List of projects with Angular 4, 5, 6 and Firestore
 
