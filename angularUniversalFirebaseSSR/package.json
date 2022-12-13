@@ -30,7 +30,7 @@
     "@nguniversal/module-map-ngfactory-loader": "0.0.0",
     "angular-fire-schematics": "^1.0.0",
     "core-js": "^2.5.4",
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "firebase": "6.1.0",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
